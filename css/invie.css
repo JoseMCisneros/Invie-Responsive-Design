@@ -1,3 +1,43 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?dresks');
+  src:  url('../fonts/icomoon.eot?dresks#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?dresks') format('truetype'),
+    url('../fonts/icomoon.woff?dresks') format('woff'),
+    url('../fonts/icomoon.svg?dresks#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-envelop:before {
+  content: "\e945";
+}
+.icon-menu:before {
+  content: "\e9bd";
+}
+.icon-close:before {
+  content: "\ea0d";
+}
+
+
 body {
   font-family: 'Allerta', sans-serif;       /*Google fonts*/
   margin: 0;
@@ -249,6 +289,21 @@ input:focus, textarea:focus {
   margin: 50px 0;
 }
 
+.burguer-button {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  background: #395667;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  z-index: 3;
+}
+
 @media screen and (max-width: 800px) {
   /*body {
     border: 10px solid red;
@@ -381,6 +436,32 @@ input:focus, textarea:focus {
 
 @media screen and (max-width: 500px) {
   /*Portada*/
+  .portada .contenedor {
+    position: static;
+  }
+
+  .menu {
+    background: rgba(255, 60, 88, .5);
+    position: absolute;
+    left: -100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    transition: .3s;
+  }
+
+  .menu.active {
+    left: 0;
+  }
+
+  .menu ul {
+    flex: 1;
+  }
+
   .menu li {
     display: block;
     margin: 0;
