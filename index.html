@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta" rel="stylesheet">  <!--Google fonts link-->
     <link rel="stylesheet" href="css/invie.css"/>  <!--Forma de incluir estilos en html con un archivo externo-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/> <!--Este es el viewport el cual le asignamos que tome el ancho del dispositivo, que cubra el su 100% y no pueda el usuario hacer zoom-->
     <!-- <link rel="stylesheet" media="(max-width: 800px)" href="css/media-querie.css"/> -->
     <title>Invie - Tus mejores guitarras!!</title>
   </head>
@@ -108,9 +109,10 @@
     <script type="text/javascript">
       var $burguerButton = document.getElementById("burguer-button");
       var $menu = document.getElementById("menu");
-      $burguerButton.addEventListener("touchstart", function(){
+      $burguerButton.addEventListener("touchstart", toggleMenu);
+       function toggleMenu(){
         $menu.classList.toggle('active');
-      });
+      };
     </script>
   </body>
 </html>
