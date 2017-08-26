@@ -111,14 +111,15 @@
     </footer>                           <!--Footer-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
     <script type="text/javascript">
-    var consulta = window.matchMedia("(max-width: 500px)");
-    consulta.addListener(mediaQuery);
-    var $burguerButton = document.getElementById("burguer-button");
-    var $menu = document.getElementById("menu");
-    function toggleMenu(){
-     $menu.classList.toggle('active');
-     $burguerButton.classList.toggle('icon-close');  <!--Al momento de presionar el icono burger se cambiara al icono close-->
-   };
+      var consulta = window.matchMedia("(max-width: 500px)");
+      consulta.addListener(mediaQuery);
+
+      var $burguerButton = document.getElementById("burguer-button");
+      var $menu = document.getElementById("menu");
+      function toggleMenu(){
+        $menu.classList.toggle('active');
+        $burguerButton.classList.toggle('icon-close');  <!--Al momento de presionar el icono burger se cambiara al icono close-->
+      };
       function mediaQuery(){
         if(consulta.matches){
           console.log("Se cumplio la condicion");

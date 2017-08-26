@@ -302,6 +302,7 @@ input:focus, textarea:focus {
   position: absolute;
   left: 20px;
   top: 20px;
+  color: white;
   z-index: 3;
 }
 
@@ -313,6 +314,17 @@ input:focus, textarea:focus {
     width: auto;
     max-width: 800px;
   }*/
+  /*Precios*/
+  .tabla {
+    margin: 50px 20px;
+  }
+
+  .tabla .contenedor {
+    overflow: auto;         /*Es para elementos que se quieren desbordar y les da un scroll*/
+    border: 1px solid #273b47;
+  }
+  /*Precios*/
+
   /*Portada*/
   .titulo {
     font-size: 45px;
@@ -438,6 +450,14 @@ input:focus, textarea:focus {
 @media screen and (max-width: 500px) {
   /*Portada*/
   .portada .contenedor {
+    position: static;
+  }
+
+  .header {
+    position: static;
+  }
+
+  .header .contenedor {
     position: static;
   }
 
