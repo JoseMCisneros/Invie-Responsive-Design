@@ -110,6 +110,7 @@
       </div>
     </footer>                           <!--Footer-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
     <script type="text/javascript">
       var consulta = window.matchMedia("(max-width: 500px)");
       consulta.addListener(mediaQuery);
@@ -119,6 +120,14 @@
       function toggleMenu(){
         $menu.classList.toggle('active');
         $burguerButton.classList.toggle('icon-close');  <!--Al momento de presionar el icono burger se cambiara al icono close-->
+      };
+      function showMenu(){
+        $menu.classList.add('active');
+        $burguerButton.classList.add('icon-close');
+      };
+      function hideMenu(){
+        $menu.classList.remove('active');
+        $burguerButton.classList.remove('icon-close');
       };
       function mediaQuery(){
         if(consulta.matches){
@@ -138,6 +147,11 @@
         //options
         selector: 'img'
       });
+      //Gestos Touch
+      var $body = document.body;
+      var gestos = new Hammer($body);
+      gestos.on('swiperight', showMenu);
+      gestos.on('swipeleft', hideMenu);
     </script>
   </body>
 </html>

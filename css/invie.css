@@ -208,10 +208,6 @@ input:focus, textarea:focus {
   position: relative;
 }
 
-.header-b {
-  padding: 20px;
-}
-
 .footer {                     /*Footer*/
   background: #273b47;
   padding: 50px 10px;
