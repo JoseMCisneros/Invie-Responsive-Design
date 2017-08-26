@@ -81,6 +81,7 @@ input:focus, textarea:focus {
 
 .background {
   /*background: rgba(12, 12, 12, 0.5);  rgb: color combinado de rojo, verde, azul.   rgba: color combinado con transparencia*/
+  background-color: #466173;
   background-image: url('../images/background.png');
   background-size: cover;         /*Cover hace que la imagen busque la mejor distribucion en el espacio disponible */
 }
@@ -520,4 +521,10 @@ video {
   bottom: 0;
   width: 100%;
   height: 100%;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  .background {
+    background-image: url('../images/background2x.png');
+  }
 }
