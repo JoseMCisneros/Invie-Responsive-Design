@@ -37,8 +37,12 @@
     </section>
     <section id="guitarras" class="guitarras contenedor"><!--guitarras-->   <!--Para incluir otra clase solo se separan por espacios-->
       <h2>Nuestras guitarras</h2><!-- titulo -->
-      <div class="video-responsive-contenedor">
-        <iframe class="video-responsive-src" width="560" height="315" src="https://www.youtube.com/embed/R1dW8M4EqYY" frameborder="0" allowfullscreen></iframe>
+      <div class="video-demo-contenedor">
+        <div class="video-demo">
+          <div class="video-responsive-contenedor">
+            <iframe class="video-responsive-src" width="560" height="315" src="https://www.youtube.com/embed/R1dW8M4EqYY" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
       </div>
       <article class="guitarra"><!-- guitarra 1 -->
         <img class="right" data-src="images/invie-acustica.png|images/invie-acustica2x.png" alt="Guitarra Invie Acustica" width="350"/>   <!--data-src es para el lazy loading y con el | se separan las imagenes para soporte de retina-->
@@ -102,7 +106,7 @@
             </div>
             <div class="col2">
               <label for="comentario">Comentario</label>
-              <textarea name="comentario" id="comentario" rows="7" cols="30"></textarea>
+              <textarea name="comentario" id="comentario" rows="9" cols="30"></textarea>
               <input type="submit"  value="Enviar"  class="button">       <!--El atributo value hace que el sistema este en ingles o español el boton tendra el texto del atributo-->
             </div>
           </form>                                 <!--Formulario-->
