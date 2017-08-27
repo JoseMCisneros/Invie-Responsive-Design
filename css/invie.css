@@ -396,14 +396,31 @@ input:focus, textarea:focus {
     display: block;
   }
 
+  .contacto a {
+    display: block;
+  }
+
   .contacto {
     margin: 0 auto;
+    display: block;
   }
 
   .formulario {
     display: block;
     margin: 0 auto;
     width: 300px
+  }
+
+  .sexo label {
+    display: block;
+  }
+
+  .sexo {
+    margin: 15px 0;
+  }
+
+  .formulario label {
+    font-size: 20px;
   }
 
  .col1.contenedor {
@@ -416,9 +433,12 @@ input:focus, textarea:focus {
 
  .interes label {
    display: block;
-   font-size: 16px;
+   font-size: 20px;
  }
 
+ input[type="text"]{
+   margin-bottom: 15px;
+ }
  input[type="text"],
  input[type="email"]{
    font-size: 16px;
